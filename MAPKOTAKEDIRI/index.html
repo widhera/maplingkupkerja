@@ -31,7 +31,7 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="data/BACKGROUND_0.js"></script>
-        <script src="data/INDONESIA_KEC_1.js"></script>
+        <script src="data/final_kab_kediri_1.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -106,14 +106,14 @@
             return {
                 pane: 'pane_BACKGROUND_0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.564705882353)',
+                color: 'rgba(0,0,0,0.564706)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,255,255,0.564705882353)',
+                fillColor: 'rgba(255,255,255,0.564706)',
             }
         }
         map.createPane('pane_BACKGROUND_0');
@@ -127,7 +127,7 @@
         });
         bounds_group.addLayer(layer_BACKGROUND_0);
         map.addLayer(layer_BACKGROUND_0);
-        function pop_INDONESIA_KEC_1(feature, layer) {
+        function pop_final_kab_kediri_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ID</th>\
@@ -138,11 +138,11 @@
                         <td>' + (feature.properties['ID_Kec'] !== null ? Autolinker.link(String(feature.properties['ID_Kec'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Kecamatan'] !== null ? Autolinker.link(String(feature.properties['Kecamatan'])) : '') + '</td>\
+                        <th scope="row">Kecamatan</th>\
+                        <td>' + (feature.properties['Kecamatan'] !== null ? Autolinker.link(String(feature.properties['Kecamatan'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">xcoord</th>\
-                        <td>' + (feature.properties['xcoord'] !== null ? Autolinker.link(String(feature.properties['xcoord'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['xcoord'] !== null ? Autolinker.link(String(feature.properties['xcoord'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['ycoord'] !== null ? Autolinker.link(String(feature.properties['ycoord'])) : '') + '</td>\
@@ -154,17 +154,17 @@
                         <td colspan="2">' + (feature.properties['kode_kab'] !== null ? Autolinker.link(String(feature.properties['kode_kab'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['orig_ogc_fid'] !== null ? Autolinker.link(String(feature.properties['orig_ogc_fid'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['orig_ogc_f'] !== null ? Autolinker.link(String(feature.properties['orig_ogc_f'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_INDONESIA_KEC_1_0(feature) {
+        function style_final_kab_kediri_1_0(feature) {
             switch(String(feature.properties['Kecamatan'])) {
-                case 'Kota Kediri':
+                case 'Badas':
                     return {
-                pane: 'pane_INDONESIA_KEC_1',
+                pane: 'pane_final_kab_kediri_1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -173,12 +173,12 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,66,41,1.0)',
+                fillColor: 'rgba(201,83,138,1.0)',
             }
                     break;
-                case 'Mojoroto':
+                case 'Banyakan':
                     return {
-                pane: 'pane_INDONESIA_KEC_1',
+                pane: 'pane_final_kab_kediri_1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -187,12 +187,12 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(58,131,32,1.0)',
+                fillColor: 'rgba(158,109,227,1.0)',
             }
                     break;
-                case 'Pesantren':
+                case 'Gampengrejo':
                     return {
-                pane: 'pane_INDONESIA_KEC_1',
+                pane: 'pane_final_kab_kediri_1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -201,24 +201,360 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(111,120,233,1.0)',
+                fillColor: 'rgba(166,231,110,1.0)',
+            }
+                    break;
+                case 'Grogol':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(200,33,225,1.0)',
+            }
+                    break;
+                case 'Gurah':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(204,112,47,1.0)',
+            }
+                    break;
+                case 'Kandangan':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(85,221,142,1.0)',
+            }
+                    break;
+                case 'Kayen Kidul':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(217,76,79,1.0)',
+            }
+                    break;
+                case 'Kendat':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(210,58,162,1.0)',
+            }
+                    break;
+                case 'Kepung':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(155,48,212,1.0)',
+            }
+                    break;
+                case 'Kraas':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(110,240,193,1.0)',
+            }
+                    break;
+                case 'Kunjang':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(219,76,112,1.0)',
+            }
+                    break;
+                case 'Mojo':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(29,32,208,1.0)',
+            }
+                    break;
+                case 'Ngadiluwih':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(212,201,127,1.0)',
+            }
+                    break;
+                case 'Ngancar':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(218,98,68,1.0)',
+            }
+                    break;
+                case 'Ngasem':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(156,156,156,1.0)',
+            }
+                    break;
+                case 'Pagu':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(42,236,207,1.0)',
+            }
+                    break;
+                case 'Papar':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(137,225,134,1.0)',
+            }
+                    break;
+                case 'Pare':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(173,204,101,1.0)',
+            }
+                    break;
+                case 'Plemahan':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(78,110,218,1.0)',
+            }
+                    break;
+                case 'Plosoklaten':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(24,206,226,1.0)',
+            }
+                    break;
+                case 'Puncu':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(211,105,202,1.0)',
+            }
+                    break;
+                case 'Purwoasri':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(143,223,116,1.0)',
+            }
+                    break;
+                case 'Ringinrejo':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(37,129,233,1.0)',
+            }
+                    break;
+                case 'Semen':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(207,217,92,1.0)',
+            }
+                    break;
+                case 'Tarokan':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(15,219,56,1.0)',
+            }
+                    break;
+                case 'Wates':
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(82,49,215,1.0)',
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_final_kab_kediri_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(216,154,46,1.0)',
             }
                     break;
             }
         }
-        map.createPane('pane_INDONESIA_KEC_1');
-        map.getPane('pane_INDONESIA_KEC_1').style.zIndex = 401;
-        map.getPane('pane_INDONESIA_KEC_1').style['mix-blend-mode'] = 'normal';
-        var layer_INDONESIA_KEC_1 = new L.geoJson(json_INDONESIA_KEC_1, {
+        map.createPane('pane_final_kab_kediri_1');
+        map.getPane('pane_final_kab_kediri_1').style.zIndex = 401;
+        map.getPane('pane_final_kab_kediri_1').style['mix-blend-mode'] = 'normal';
+        var layer_final_kab_kediri_1 = new L.geoJson(json_final_kab_kediri_1, {
             attribution: '<a href=""></a>',
-            pane: 'pane_INDONESIA_KEC_1',
-            onEachFeature: pop_INDONESIA_KEC_1,
-            style: style_INDONESIA_KEC_1_0,
+            pane: 'pane_final_kab_kediri_1',
+            onEachFeature: pop_final_kab_kediri_1,
+            style: style_final_kab_kediri_1_0,
         });
-        bounds_group.addLayer(layer_INDONESIA_KEC_1);
-        map.addLayer(layer_INDONESIA_KEC_1);
+        bounds_group.addLayer(layer_final_kab_kediri_1);
+        map.addLayer(layer_final_kab_kediri_1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'INDONESIA_KEC<br /><table><tr><td style="text-align: center;"><img src="legend/INDONESIA_KEC_1_KotaKediri0.png" /></td><td>Kota Kediri</td></tr><tr><td style="text-align: center;"><img src="legend/INDONESIA_KEC_1_Mojoroto1.png" /></td><td>Mojoroto</td></tr><tr><td style="text-align: center;"><img src="legend/INDONESIA_KEC_1_Pesantren2.png" /></td><td>Pesantren</td></tr></table>': layer_INDONESIA_KEC_1,'<img src="legend/BACKGROUND_0.png" /> BACKGROUND': layer_BACKGROUND_0,}).addTo(map);
+        L.control.layers(baseMaps,{'final_kab_kediri<br /><table><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Badas0.png" /></td><td>Badas</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Banyakan1.png" /></td><td>Banyakan</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Gampengrejo2.png" /></td><td>Gampengrejo</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Grogol3.png" /></td><td>Grogol</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Gurah4.png" /></td><td>Gurah</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Kandangan5.png" /></td><td>Kandangan</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_KayenKidul6.png" /></td><td>Kayen Kidul</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Kendat7.png" /></td><td>Kendat</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Kepung8.png" /></td><td>Kepung</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Kraas9.png" /></td><td>Kraas</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Kunjang10.png" /></td><td>Kunjang</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Mojo11.png" /></td><td>Mojo</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Ngadiluwih12.png" /></td><td>Ngadiluwih</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Ngancar13.png" /></td><td>Ngancar</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Ngasem14.png" /></td><td>Ngasem</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Pagu15.png" /></td><td>Pagu</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Papar16.png" /></td><td>Papar</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Pare17.png" /></td><td>Pare</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Plemahan18.png" /></td><td>Plemahan</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Plosoklaten19.png" /></td><td>Plosoklaten</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Puncu20.png" /></td><td>Puncu</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Purwoasri21.png" /></td><td>Purwoasri</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Ringinrejo22.png" /></td><td>Ringinrejo</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Semen23.png" /></td><td>Semen</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Tarokan24.png" /></td><td>Tarokan</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_Wates25.png" /></td><td>Wates</td></tr><tr><td style="text-align: center;"><img src="legend/final_kab_kediri_1_26.png" /></td><td></td></tr></table>': layer_final_kab_kediri_1,'<img src="legend/BACKGROUND_0.png" /> BACKGROUND': layer_BACKGROUND_0,}).addTo(map);
         setBounds();
         </script>
     </body>
