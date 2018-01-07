@@ -10,15 +10,15 @@
         <script src="{{ asset('MAPPERKOTA/data/LAINYA_0.js') }}"></script>
         <script src="{{ asset('MAPPERKOTA/data/LingkupKerja_1.js') }}"></script>
         <!-- WILAYAH -->
-        <script src="{{ asset('MAPPERKOTA/data/KabupatenNganjuk_2.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KabupatenJombang_3.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KabupatenKediri_4.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KotaKediri_5.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/PERKOTA/KabupatenNganjuk_2.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/PERKOTA/KabupatenJombang_3.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/PERKOTA/KabupatenKediri_4.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/PERKOTA/KotaKediri_5.js') }}"></script>
 
         <!-- KOTA KEDIRI -->
-        <script src="{{ asset('MAPPERKOTA/data/Pesantren_2.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/Mojoroto_3.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KotaKediri_4.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/KOTAKEDIRI/Pesantren_2.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/KOTAKEDIRI/Mojoroto_3.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/KOTAKEDIRI/KotaKediri_4.js') }}"></script>
 
         <!-- KEDIRI -->
         <script src="{{ asset('MAPPERKOTA/data/KEDIRI/Wates_2.js') }}"></script>
@@ -49,26 +49,26 @@
         <script src="{{ asset('MAPPERKOTA/data/KEDIRI/Badas_27.js') }}"></script>
 
         <!-- NGANJUK -->
-        <script src="{{ asset('MAPPERKOTA/data/KecWilangan_2.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecTanjunganom_3.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecSukomoro_4.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecSawahan_5.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecRejoso_6.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecPrambon_7.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecPatianrowo_8.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecPace_9.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecNgronggot_10.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecNgluyu_11.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecNgetos_12.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecNganjuk_13.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecLoceret_14.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecLengkong_15.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecKertosono_16.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecJatikalen_17.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecGondang_18.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecBerbek_19.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecBaron_20.js') }}"></script>
-        <script src="{{ asset('MAPPERKOTA/data/KecBagor_21.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecWilangan_2.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecTanjunganom_3.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecSukomoro_4.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecSawahan_5.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecRejoso_6.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecPrambon_7.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecPatianrowo_8.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecPace_9.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecNgronggot_10.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecNgluyu_11.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecNgetos_12.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecNganjuk_13.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecLoceret_14.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecLengkong_15.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecKertosono_16.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecJatikalen_17.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecGondang_18.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecBerbek_19.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecBaron_20.js') }}"></script>
+        <script src="{{ asset('MAPPERKOTA/data/NGANJUK/KecBagor_21.js') }}"></script>
 
         <!-- JOMBANG -->
         <script src="{{ asset('MAPPERKOTA/data/JOMBANG/KecWonosalam_2.js') }}"></script>
@@ -94,67 +94,20 @@
         <script src="{{ asset('MAPPERKOTA/data/JOMBANG/KecBandarKedungmulyo_22.js') }}"></script>
 
         <script>
-        @include('mapperkota.js_highlightLayer')
-        @include('mapperkota.js_map')
+        @include('mapperkota.base.js_highlightLayer')
+        @include('mapperkota.base.js_map')
         function setBounds() {
         }
-        @include('mapperkota.js_lainya')
-        @include('mapperkota.js_lingkupkerja')
-        @include('mapperkota.form_map')
+        @include('mapperkota.base.js_lainya')
+        @include('mapperkota.base.js_lingkupkerja')
+        @include('mapperkota.base.form_map')
         @include('mapperkota.js_perkota')
         @include('mapperkota.js_kotakediri')
         @include('mapperkota.js_nganjuk')
         @include('mapperkota.js_kediri')
         @include('mapperkota.js_jombang')
         map.addControl(legend_perkota);
-        function pilih(){
-                var cou = document.getElementById("select");
-                var cou1 = cou.options[cou.selectedIndex].value;
-                if(cou1==1)
-                {
-                    @include('mapperkota.pilih.pilih_jombang.remove_jombang')
-                    @include('mapperkota.pilih.pilih_kotakediri.remove_kotakediri')
-                    @include('mapperkota.pilih.pilih_kediri.remove_kediri')
-                    @include('mapperkota.pilih.pilih_nganjuk.remove_nganjuk')
-                    @include('mapperkota.pilih.pilih_perkota.add_perkota')
-                    
-                }
-                else if(cou1==2)
-                {
-                    @include('mapperkota.pilih.pilih_jombang.remove_jombang')
-                    @include('mapperkota.pilih.pilih_perkota.remove_perkota')
-                    @include('mapperkota.pilih.pilih_kediri.remove_kediri')
-                    @include('mapperkota.pilih.pilih_nganjuk.remove_nganjuk')
-                    @include('mapperkota.pilih.pilih_kotakediri.add_kotakediri')
-                }
-                else if(cou1==3)
-                {
-                    @include('mapperkota.pilih.pilih_jombang.remove_jombang')
-                    @include('mapperkota.pilih.pilih_perkota.remove_perkota')
-                    @include('mapperkota.pilih.pilih_kotakediri.remove_kotakediri')
-                    @include('mapperkota.pilih.pilih_nganjuk.remove_nganjuk')
-                    @include('mapperkota.pilih.pilih_kediri.add_kediri')
-
-                }
-                else if(cou1==4)
-                {
-                    @include('mapperkota.pilih.pilih_jombang.remove_jombang')
-                    @include('mapperkota.pilih.pilih_perkota.remove_perkota')
-                    @include('mapperkota.pilih.pilih_kediri.remove_kediri')
-                    @include('mapperkota.pilih.pilih_kotakediri.remove_kotakediri')
-                    @include('mapperkota.pilih.pilih_nganjuk.add_nganjuk')
-
-                }
-                else
-                {
-                    @include('mapperkota.pilih.pilih_perkota.remove_perkota')
-                    @include('mapperkota.pilih.pilih_kediri.remove_kediri')
-                    @include('mapperkota.pilih.pilih_kotakediri.remove_kotakediri')
-                    @include('mapperkota.pilih.pilih_nganjuk.remove_nganjuk')
-                    @include('mapperkota.pilih.pilih_jombang.add_jombang')
-
-                }
-        }
+        @include('mapperkota.pilih.js_pilih')
         
         
         

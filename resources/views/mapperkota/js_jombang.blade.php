@@ -30,7 +30,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(131,255,137,1.0)',
             }
         }
@@ -77,7 +77,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(255,67,158,1.0)',
             }
         }
@@ -124,7 +124,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(181,184,141,1.0)',
             }
         }
@@ -171,7 +171,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(39,201,126,1.0)',
             }
         }
@@ -218,7 +218,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(0,22,190,1.0)',
             }
         }
@@ -265,7 +265,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(225,198,129,1.0)',
             }
         }
@@ -312,7 +312,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(202,214,214,1.0)',
             }
         }
@@ -359,7 +359,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(204,160,160,1.0)',
             }
         }
@@ -406,7 +406,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(78,0,14,1.0)',
             }
         }
@@ -453,7 +453,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(53,131,57,1.0)',
             }
         }
@@ -500,7 +500,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(114,233,188,1.0)',
             }
         }
@@ -547,7 +547,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(84,158,0,1.0)',
             }
         }
@@ -594,7 +594,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(131,88,53,1.0)',
             }
         }
@@ -641,7 +641,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(137,63,95,1.0)',
             }
         }
@@ -688,7 +688,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(216,54,57,1.0)',
             }
         }
@@ -735,7 +735,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(235,124,27,1.0)',
             }
         }
@@ -782,7 +782,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(76,94,213,1.0)',
             }
         }
@@ -829,7 +829,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(25,63,26,1.0)',
             }
         }
@@ -876,7 +876,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(53,131,126,1.0)',
             }
         }
@@ -923,7 +923,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(133,39,47,1.0)',
             }
         }
@@ -970,7 +970,7 @@ function pop_KecWonosalam_2(feature, layer) {
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.5,
                 fillColor: 'rgba(85,255,93,1.0)',
             }
         }

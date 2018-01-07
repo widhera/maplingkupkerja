@@ -20,7 +20,7 @@ var command = L.control({position: 'topright'});
                               <option>2013</option>\
                               <option>2012</option>\
                             </select></td>\
-                            <td><button     type="button" class="btn btn-xs btn-block">Button 1</button></td></tr></table>\
+                            <td><button     type="button" class="btn btn-xs btn-block">CARI</button></td></tr></table>\
                             '; 
             return div;
         };

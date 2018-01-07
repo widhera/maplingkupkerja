@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title','SIM Pemetaan Passport Online | Home')
 @section('additional_css')
-    @include('mapperkota.head_mapperkota')
+    @include('mapperkota.base.head_mapperkota')
     <style type="text/css">
         #portfolio .portfolio-item .portfolio-link .caption {
             background: rgb(31, 164, 182);
