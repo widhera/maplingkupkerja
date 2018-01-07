@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="MAPPERKOTA/css/leaflet.css">
+        <link rel="stylesheet" href="MAPPERKOTA/css/qgis2web.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="MAPPERKOTA/js/qgis2web_expressions.js"></script>
+        <script src="MAPPERKOTA/js/leaflet.js"></script>
+        <script src="MAPPERKOTA/js/leaflet.rotatedMarker.js"></script>
+        <script src="MAPPERKOTA/js/leaflet.pattern.js"></script>
+        <script src="MAPPERKOTA/js/leaflet-hash.js"></script>
+        <script src="MAPPERKOTA/js/Autolinker.min.js"></script>
+        <script src="MAPPERKOTA/js/rbush.min.js"></script>
+        <script src="MAPPERKOTA/js/labelgun.min.js"></script>
+        <script src="MAPPERKOTA/js/labels.js"></script>
+        <script src="MAPPERKOTA/data/INDONESIA_KAB_0.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        })
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var bounds_group = new L.featureGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        function setBounds() {
+            if (bounds_group.getLayers().length) {
+                map.fitBounds(bounds_group.getBounds());
+            }
+            map.setMaxBounds(map.getBounds());
+        }
+        function pop_INDONESIA_KAB_0(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">ID</th>\
+                        <td>' + (feature.properties['ID'] !== null ? Autolinker.link(String(feature.properties['ID'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Kabupaten_</th>\
+                        <td>' + (feature.properties['Kabupaten_'] !== null ? Autolinker.link(String(feature.properties['Kabupaten_'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">kode</th>\
+                        <td>' + (feature.properties['kode'] !== null ? Autolinker.link(String(feature.properties['kode'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Ibukota</th>\
+                        <td>' + (feature.properties['Ibukota'] !== null ? Autolinker.link(String(feature.properties['Ibukota'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Dsr_Hukum'] !== null ? Autolinker.link(String(feature.properties['Dsr_Hukum'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Provinsi'] !== null ? Autolinker.link(String(feature.properties['Provinsi'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Bupati_Wal'] !== null ? Autolinker.link(String(feature.properties['Bupati_Wal'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Wakil'] !== null ? Autolinker.link(String(feature.properties['Wakil'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Batas_Utar'] !== null ? Autolinker.link(String(feature.properties['Batas_Utar'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Batas_Sela'] !== null ? Autolinker.link(String(feature.properties['Batas_Sela'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Batas_Bara'] !== null ? Autolinker.link(String(feature.properties['Batas_Bara'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Batas_Timu'] !== null ? Autolinker.link(String(feature.properties['Batas_Timu'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Lmb_Geo'] !== null ? Autolinker.link(String(feature.properties['Lmb_Geo'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['orig_ogc_fid'] !== null ? Autolinker.link(String(feature.properties['orig_ogc_fid'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_INDONESIA_KAB_0_0(feature) {
+            switch(String(feature.properties['Kabupaten_'])) {
+                case 'JOMBANG':
+                    return {
+                pane: 'pane_INDONESIA_KAB_0',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(69,101,240,1.0)',
+            }
+                    break;
+                case 'KEDIRI':
+                    return {
+                pane: 'pane_INDONESIA_KAB_0',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(204,38,202,1.0)',
+            }
+                    break;
+                case 'Kota KEDIRI':
+                    return {
+                pane: 'pane_INDONESIA_KAB_0',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(149,213,59,1.0)',
+            }
+                    break;
+                case 'NGANJUK':
+                    return {
+                pane: 'pane_INDONESIA_KAB_0',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(240,130,102,1.0)',
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_INDONESIA_KAB_0');
+        map.getPane('pane_INDONESIA_KAB_0').style.zIndex = 400;
+        map.getPane('pane_INDONESIA_KAB_0').style['mix-blend-mode'] = 'normal';
+        var layer_INDONESIA_KAB_0 = new L.geoJson(json_INDONESIA_KAB_0, {
+            attribution: '<a href=""></a>',
+            pane: 'pane_INDONESIA_KAB_0',
+            onEachFeature: pop_INDONESIA_KAB_0,
+            style: style_INDONESIA_KAB_0_0,
+        });
+        bounds_group.addLayer(layer_INDONESIA_KAB_0);
+        map.addLayer(layer_INDONESIA_KAB_0);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'INDONESIA_KAB<br /><table><tr><td style="text-align: center;"><img src="MAPPERKOTA/legend/INDONESIA_KAB_0_JOMBANG0.png" /></td><td>JOMBANG</td></tr><tr><td style="text-align: center;"><img src="MAPPERKOTA/legend/INDONESIA_KAB_0_KEDIRI1.png" /></td><td>KEDIRI</td></tr><tr><td style="text-align: center;"><img src="MAPPERKOTA/legend/INDONESIA_KAB_0_KotaKEDIRI2.png" /></td><td>Kota KEDIRI</td></tr><tr><td style="text-align: center;"><img src="MAPPERKOTA/legend/INDONESIA_KAB_0_NGANJUK3.png" /></td><td>NGANJUK</td></tr></table>': layer_INDONESIA_KAB_0,}).addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>

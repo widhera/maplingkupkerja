@@ -1,0 +1,3 @@
+function pilih(){
+	if(document)
+}
